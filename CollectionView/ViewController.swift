@@ -24,9 +24,10 @@ class ViewController: UIViewController {
   }
   
   func configureLayout() -> UICollectionViewCompositionalLayout {
-    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2), heightDimension: .fractionalHeight(1.0))
     let item = NSCollectionLayoutItem(layoutSize: itemSize)
-    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(44.0))
+    item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.2))
     let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
     let section = NSCollectionLayoutSection(group: group)
     return UICollectionViewCompositionalLayout(section: section)

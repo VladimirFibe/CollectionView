@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -34,17 +35,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdS-1s-RUs">
-                                                    <rect key="frame" x="8" y="11.5" width="398" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdS-1s-RUs">
+                                                    <rect key="frame" x="186.5" y="11.5" width="41.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" systemColor="systemGray5Color"/>
                                             <constraints>
                                                 <constraint firstItem="cdS-1s-RUs" firstAttribute="centerY" secondItem="Psr-iC-Tfi" secondAttribute="centerY" id="LnL-5L-zbz"/>
-                                                <constraint firstItem="cdS-1s-RUs" firstAttribute="leading" secondItem="Psr-iC-Tfi" secondAttribute="leading" constant="8" id="OFE-Pr-xrt"/>
-                                                <constraint firstAttribute="trailing" secondItem="cdS-1s-RUs" secondAttribute="trailing" constant="8" id="V1s-gW-rWB"/>
+                                                <constraint firstItem="cdS-1s-RUs" firstAttribute="centerX" secondItem="Psr-iC-Tfi" secondAttribute="centerX" id="NXV-mU-yfR"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="44"/>
@@ -76,6 +77,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
